@@ -32,6 +32,7 @@
     <script>
         const onScanSuccess = (decodedText, decodedResult) => {
             document.getElementById("result").innerHTML = decodedText;
+            html5QrCode.stop()
         };
 
         const onScanError = (error) => {
